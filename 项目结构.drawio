@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0" version="28.2.7">
+  <diagram name="第 1 页" id="TB4qFTdO-mPO6aPp6ENt">
+    <mxGraphModel dx="946" dy="632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-1" value="&lt;div&gt;network.py&lt;/div&gt;&lt;div&gt;实现network类&lt;/div&gt;&lt;div&gt;构建胖树，能够为一组主机寻找路径&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="50" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-2" value="&lt;div&gt;network_resource.py&lt;/div&gt;&lt;div&gt;管理网络资源，包括链路和流&lt;/div&gt;&lt;div&gt;实现注水算法为全部流设置流速&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="130" width="246" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-3" value="&lt;div&gt;flow.py&lt;/div&gt;&lt;div&gt;实现flow类模拟流&lt;/div&gt;&lt;div&gt;用flowgroup类对流组进行管理&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="210" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-4" value="&lt;div&gt;job.py&lt;/div&gt;&lt;div&gt;实现任务job类和操作operation类&lt;/div&gt;&lt;div&gt;模拟任务在每个时间步内的行为&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="370" width="246" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-5" value="&lt;div&gt;jobloader.py&lt;/div&gt;&lt;div&gt;辅助从json文件中加载任务&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="370" width="210" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-8" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1.007;exitY=0.577;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-1" target="Rd3bugECH9vJ4EAZ4pwh-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="340" as="sourcePoint" />
+            <mxPoint x="440" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-9" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-3" target="Rd3bugECH9vJ4EAZ4pwh-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="330" as="sourcePoint" />
+            <mxPoint x="350" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-5" target="Rd3bugECH9vJ4EAZ4pwh-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="340" as="sourcePoint" />
+            <mxPoint x="440" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-11" value="&lt;div&gt;scheduler.py&lt;/div&gt;&lt;div&gt;模拟完整的调度过程&lt;/div&gt;&lt;div&gt;加载、调度、迭代&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="240" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-2" target="Rd3bugECH9vJ4EAZ4pwh-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="340" as="sourcePoint" />
+            <mxPoint x="640" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-4" target="Rd3bugECH9vJ4EAZ4pwh-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="450" as="sourcePoint" />
+            <mxPoint x="650" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-14" value="&lt;div&gt;allocation&lt;/div&gt;&lt;div&gt;分配策略&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="50" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-15" value="&lt;div&gt;treebuilding&lt;/div&gt;&lt;div&gt;建树策略&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="250" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-16" value="&lt;div&gt;sharing&lt;/div&gt;&lt;div&gt;共享策略&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="480" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-18" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-11" target="Rd3bugECH9vJ4EAZ4pwh-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="890" y="190" as="sourcePoint" />
+            <mxPoint x="940" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-19" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-11" target="Rd3bugECH9vJ4EAZ4pwh-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1050" y="340" as="sourcePoint" />
+            <mxPoint x="1100" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-20" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-11" target="Rd3bugECH9vJ4EAZ4pwh-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="960" y="450" as="sourcePoint" />
+            <mxPoint x="1010" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-14" target="Rd3bugECH9vJ4EAZ4pwh-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="210" as="sourcePoint" />
+            <mxPoint x="1120" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-15" target="Rd3bugECH9vJ4EAZ4pwh-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1130" y="440" as="sourcePoint" />
+            <mxPoint x="1180" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-23" value="&lt;div&gt;\utils\transform.py&lt;/div&gt;&lt;div&gt;转换&lt;span&gt;Philley集群的作业日志&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="565" width="180" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-24" value="&lt;div&gt;\utils\random_generator.py&lt;/div&gt;&lt;div&gt;随机生成job&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="570" width="170" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-25" value="&lt;div&gt;\utils\logger.py&lt;/div&gt;&lt;div&gt;辅助scheduler输出过程&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="420" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-25" target="Rd3bugECH9vJ4EAZ4pwh-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="880" y="340" as="sourcePoint" />
+            <mxPoint x="930" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-24" target="Rd3bugECH9vJ4EAZ4pwh-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="450" as="sourcePoint" />
+            <mxPoint x="550" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Rd3bugECH9vJ4EAZ4pwh-23" target="Rd3bugECH9vJ4EAZ4pwh-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="570" as="sourcePoint" />
+            <mxPoint x="510" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Rd3bugECH9vJ4EAZ4pwh-30" value="&lt;div&gt;缺失部件：&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.job中目前只实现了compute和allreduce两个操作，job的种类只实现了allreduce，还有pipeline等预计任务模式没有完成。&lt;div style=&quot;white-space: pre;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;white-space: pre;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;white-space: pre;&quot;&gt;预计可优化部分：&lt;/div&gt;&lt;div style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.network.py中，链路的查询可以建立索引以更高效地实现。聚合树的创建可以利用缓存等手段省去频繁查询。代码的其他许多部分似乎也可以建立索引和缓存来减少计算。&lt;/div&gt;&lt;div style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2.network_resource.py的注水算法目前时间复杂度过高，可以进行优化降低复杂度。&lt;/div&gt;&lt;div style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;3.allreduce的通信网络似乎可以优化以减少时间。&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="730" width="935" height="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
